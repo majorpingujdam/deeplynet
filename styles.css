@@ -100,3 +100,27 @@ iframe {
     margin: 20px 0; /* Add some margin around the viewer */
 }
 
+/* Add this to your existing styles.css file */
+
+/* Flexbox layout for content wrapper */
+.content-wrapper {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between text and image */
+    align-items: flex-start; /* Align items at the top */
+}
+
+/* Style for text content */
+.text-content {
+    flex: 1; /* Allow the text content to take available space */
+    margin-right: 20px; /* Space between text and image */
+}
+
+/* Style for the image */
+.image-content {
+    flex: 0 0 300px; /* Fixed width for image container */
+}
+
+.responsive-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
