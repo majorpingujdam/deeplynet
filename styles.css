@@ -1,0 +1,102 @@
+/* General reset to remove default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a dark background with a subtle gradient */
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e); /* Dark background gradient */
+    color: #e0e0e0; /* Light gray text for readability */
+    font-family: 'Roboto Mono', monospace; /* Monospace font for a tech/research feel */
+    line-height: 1.6;
+}
+
+/* Style for headings with neon green/orange accents */
+h1, h2 {
+    color: #66ff99; /* Neon green color */
+    text-shadow: 0 0 8px #32ff7e, 0 0 16px #00ff44; /* Glow effect for green neon text */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Paragraph styling for better readability */
+p {
+    font-size: 1.1rem;
+    margin: 20px;
+    color: #ffdd99; /* Soft orange text color */
+}
+
+/* Navigation styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #222831; /* Dark background for nav */
+    border-radius: 10px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff9933; /* Bright orange link */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 0 0 4px #ff9933, 0 0 8px #ff4500; /* Neon orange glow */
+}
+
+nav ul li a:hover {
+    color: #ff5e00; /* Darker orange on hover */
+    text-shadow: 0 0 6px #ff9933, 0 0 12px #ff5e00;
+}
+
+/* Container styling for content boxes */
+.container {
+    background-color: #212121; /* Dark background */
+    border: 2px solid #66ff99; /* Green neon border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+    box-shadow: 0 0 10px #32ff7e, 0 0 20px #00ff44; /* Green neon glow */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1b1b2f;
+    color: #ffdd99; /* Soft orange footer text */
+    border-top: 2px solid #66ff99; /* Green neon border */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Make the site responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+iframe {
+    width: 100%; /* Full width */
+    height: 70vh; /* Set height to 110% of the viewport height */
+    border: none; /* No border */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    overflow: hidden; /* Prevent overflow */
+    margin: 20px 0; /* Add some margin around the viewer */
+}
+
